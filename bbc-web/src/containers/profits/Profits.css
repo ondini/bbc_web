@@ -1,0 +1,67 @@
+.profits-wrapper {
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chart-contaier h2 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0rem 0rem;
+}
+
+.chart-contaier {
+  height: 400px;
+  width: 600px;
+  margin-right: 1rem;
+}
+
+.chart-contaier h2 {
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 1360px) {
+  .chart-wrapper {
+    flex-direction: column;
+  }
+
+  .chart-contaier {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .chart-contaier h2 {
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  .chart-contaier {
+    height: 350px;
+    width: 90vw;
+  }
+
+  .chart-wrapper {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .chart-contaier h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

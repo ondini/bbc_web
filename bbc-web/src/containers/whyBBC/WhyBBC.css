@@ -1,0 +1,29 @@
+.whybbc-wrapper {
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.whybbc-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .whybbc-container {
+    flex-direction: column;
+  }
+  .card-container {
+    margin: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .whybbc-wrappper {
+    padding: 0rem 1rem;
+  }
+}

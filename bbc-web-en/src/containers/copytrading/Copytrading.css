@@ -1,0 +1,115 @@
+.whatbbc_wrapper {
+  margin-bottom: 5rem;
+  background: var(--nogradient-section);
+
+  padding: 0 2rem;
+}
+
+.whatbbc-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-secondary);
+}
+
+.whatbbc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--color-secondary);
+  padding: 2rem 2rem;
+}
+
+.whatbbc-heading {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  text-align: left;
+  margin-right: 3rem;
+}
+
+.whatbbc-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+.whatbbc-heading p {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: var(--font-family);
+
+  margin-top: 2rem;
+}
+
+.whatbbc-features-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.whatbbc-btn {
+  padding: 0.8rem 1rem;
+  color: var(--color-nav-text);
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  border: 2px solid var(--color-primary);
+  outline: none;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin-bottom: 3rem;
+}
+
+.whatbbc-btn:hover {
+  border-color: var(--color-nav-text);
+}
+
+@media screen and (max-width: 1060px) {
+  .whatbbc {
+    flex-direction: column; /* depends on how much text is inside! */
+  }
+
+  .whatbbc-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .whatbbc_wrapper {
+    padding: 0rem 1rem;
+  }
+
+  .whatbbc {
+    padding: 1.5rem 1rem;
+  }
+  .whatbbc-features-container .feature-container {
+    flex-direction: column;
+  }
+
+  .whatbbc-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .whatbbc_wrapper {
+    padding: 0;
+  }
+
+  .whatbbc {
+    padding: 2rem 0rem;
+  }
+}

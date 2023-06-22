@@ -1,0 +1,57 @@
+.cta-wrapper {
+  background: var(--color-secondary);
+  margin-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-heading {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 800px;
+}
+
+.cta-heading h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 75px;
+  color: var(--color-text);
+}
+
+.cta-btn {
+  padding: 0.8rem 1rem;
+  color: var(--color-nav-text);
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  border: 2.1px solid var(--color-primary);
+  outline: none;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin-bottom: 3rem;
+}
+
+.cta-btn:hover {
+  border-color: var(--color-nav-text);
+}
+
+@media screen and (max-width: 650px) {
+  .cta-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .cta-btn {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

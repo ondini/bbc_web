@@ -1,0 +1,46 @@
+.heading {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.left {
+  justify-content: flex-start;
+}
+.heading div {
+  flex: 0.55;
+  height: 3px;
+  background: var(--color-primary);
+}
+
+.heading h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .heading h1 {
+    font-size: 29px;
+    line-height: 40px;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .heading h1 {
+    font-size: 25px;
+    line-height: 38px;
+    margin: 0 0.8rem;
+  }
+}

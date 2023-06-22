@@ -1,0 +1,315 @@
+.services-wrapper {
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.whatcopy-wrapper {
+  margin-bottom: 5rem;
+  background: var(--nogradient-section2);
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatcopy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--color-primary);
+  padding: 2rem 2rem;
+}
+
+.whatcopy-heading {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  text-align: left;
+  margin-right: 2rem;
+}
+
+.whatcopy-heading h1,
+.whatcopy-features-container h1,
+.services-cons h1,
+.services-agres h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.dummy {
+  opacity: 0;
+}
+
+.add {
+  font-size: 11px;
+  line-height: 16px;
+  font-style: italic;
+}
+
+.whatcopy-heading h2,
+.whatcopy-features-container h2,
+.services-cons h2,
+.services-agres h2 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+.whatcopy-heading p {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  text-align: justify;
+
+  margin-top: 2rem;
+}
+
+.whatcopy-features-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.whatcopy-btn {
+  padding: 0.8rem 1rem;
+  color: var(--color-nav-text);
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  border: 2px solid var(--color-nav-text);
+  outline: none;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin-bottom: 3rem;
+}
+
+.whatcopy-btn:hover {
+  border-color: var(--color-secondary);
+}
+
+.services-container-wrapper {
+  background: var(--tq-color-secondary);
+  margin-bottom: 2rem;
+}
+
+.services-container {
+  display: flex;
+  flex: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.services-cons {
+  background: var(--color-secondary);
+  padding: 2rem;
+  height: 100%;
+  max-width: 600px;
+}
+
+.services-agres {
+  background: var(--color-primary);
+  padding: 2rem;
+  max-width: 400px;
+  height: 100%;
+}
+
+.services-cons p,
+.services-agres p {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: var(--font-family);
+
+  margin-top: 1rem;
+}
+
+.videobutton-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.cons-btn,
+.agres-btn {
+  padding: 0.6rem 1rem;
+  color: var(--color-nav-text);
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  border: 2px solid var(--color-nav-text);
+  outline: none;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin-top: 0.5rem;
+}
+
+.cons-btn:hover {
+  border-color: var(--color-primary);
+}
+
+.agres-btn:hover {
+  border-color: var(--color-secondary);
+}
+
+@media screen and (max-width: 1050px) {
+  .whatcopy {
+    flex-direction: column;
+  }
+  .services-heading p {
+    margin-top: 1rem;
+  }
+  .whatcopy-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .services-container-wrapper {
+    background: transparent;
+    padding: 0rem 2rem;
+  }
+  .services-container {
+    flex-direction: column;
+  }
+
+  .services-agres {
+    max-width: none;
+    width: 100%;
+  }
+
+  .services-cons {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .whatcopy-heading h1,
+  .whatcopy-features-container h1,
+  .services-cons h1,
+  .services-agres h1,
+  .services-heading h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .whatcopy-heading h2,
+  .whatcopy-features-container h2,
+  .services-cons h2,
+  .services-agres h2 {
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  .feature-title h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #fff;
+  }
+
+  .services-cons p,
+  .services-agres p,
+  .whatcopy-heading p,
+  .cons-btn,
+  .agres-btn {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .add {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .whatcopy-wrapper {
+    padding: 0rem 1rem;
+  }
+
+  .whatcopy {
+    padding: 1.5rem 1rem;
+    padding-left: 2rem;
+  }
+  .whatcopy-features-container .feature-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .whatcopy-heading h1,
+  .whatcopy-features-container h1,
+  .services-cons h1,
+  .services-agres h1,
+  .services-heading h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .whatcopy-heading h2,
+  .whatcopy-features-container h2,
+  .services-cons h2,
+  .services-agres h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .services-cons p,
+  .services-agres p,
+  .whatcopy-heading p,
+  .cons-btn,
+  .agres-btn {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .feature-title h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .feature-text p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .add {
+    font-size: 9px;
+    line-height: 13px;
+  }
+}

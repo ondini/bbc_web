@@ -1,0 +1,152 @@
+.about-wrapper {
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-heading {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.about-heading div {
+  flex: 0.55;
+  height: 3px;
+  background: var(--color-primary);
+}
+
+.about-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  margin-right: 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+.about-features-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-features-wrapper {
+  margin-bottom: 5rem;
+  background: var(--nogradient-section);
+
+  padding: 0 2rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--color-secondary);
+  padding: 2rem 2rem;
+}
+
+.about-heading {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  text-align: left;
+  margin-right: 3rem;
+}
+
+.about-heading h2 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+.about-heading p {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: var(--font-family);
+
+  margin-top: 2rem;
+}
+
+.about-features-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1050px) {
+  .about-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+    flex-direction: column; /* depends on how much text is inside! */
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about-wrappper {
+    padding: 0rem 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .card-container {
+    margin: 1rem 1rem;
+  }
+
+  .about-heading h2 {
+    font-size: 23px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about-features-wrapper {
+    padding: 0rem 1rem;
+  }
+
+  .about {
+    padding: 1.5rem;
+  }
+  .about-features-container .feature-container {
+    flex-direction: column;
+  }
+
+  .about-heading h2 {
+    font-size: 23px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .about-heading h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .about {
+    padding: 2rem 1rem;
+  }
+}

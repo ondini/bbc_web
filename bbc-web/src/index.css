@@ -1,0 +1,30 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --font-family: "Lato", sans-serif;
+
+  --half-color: linear-gradient(90deg, #353535, 50%, #9a3030 50%);
+  --tq-color-secondary: linear-gradient(90deg, #353535, 75%, #9a3030 75%);
+
+  --nogradient-section: linear-gradient(
+    90deg,
+    #353535 93%,
+    rgba(0, 0, 0, 0) 93%
+  );
+  --nogradient-section2: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 7%,
+    #9a3030 7%
+  );
+
+  --color-bg: #000000;
+  --color-primary: #9a3030;
+
+  --color-secondary: #353535;
+  --color-nav-text: white;
+  --color-text: white;
+
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-subtext: #ff8a71;
+}
